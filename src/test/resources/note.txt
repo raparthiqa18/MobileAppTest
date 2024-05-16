@@ -1,0 +1,24 @@
+
+//command to view the connected adb devices (emulator or physical)
+
+        adb devices
+
+
+//command to find the app activity and package name, Open the app in the emulator or physical device and run below command in cmd
+
+        adb shell dumpsys window | find "mCurrentFocus"
+
+//To install the application on the device (emulator or physical)
+
+        1. cd <SDK platform tools path>
+            ex: cd C:\Users\USER\AppData\Local\Android\Sdk\platform-tools
+        2. adb install <app path>
+            ex: adb install C:\Users\USER\Downloads\APKFiles\resources\General-Store.apk
+
+
+// Android toast message tag name : android.widget.Toast
+
+// To restart adb server run this in cmd:  adb kill-server adb start-server
+
+
+
